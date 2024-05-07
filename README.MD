@@ -1,0 +1,5 @@
+## Tutorial 2: Broadcast Chat
+### 2.1. Original code of broadcast chat
+![run_server_with_3clients](documentation/aserver3clients.png)
+#### How to run it, and what happens when you type some text in the clients ?
+Untuk menjalankan satu server dan tiga clients, pertama-tama kita harus menjalankan servernya terlebih dahulu agar dapat menerima pesan dari client. Buka terminal di path tempat project `chat-async` berada kemudian jalankan perintah `cargo run --bin server`. Buka 3 buah tab atau jendela terminal baru di path yang sama. Untuk setiap tab atau terminal baru tersebut, jalankan perintah `cargo run --bin client`. Setelah semua client terhubung, kita bisa amati bahwa pesan yang kita kirimkan (dengan ketik pesan dan klik enter) akan dikirim ke server (terlihat di sisi server). Server juga akan menyebarkan (mengirim) pesan tersebut kepada semua client yang sedang terhubung ke server. Dengan begitu, semua client yang sedang terhubung bisa menerima (melihat) semua pesan yang dikirim oleh client lain ke server, juga menerima kembali pesan yang ia kirim ke server. 
