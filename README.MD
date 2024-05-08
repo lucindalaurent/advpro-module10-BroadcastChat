@@ -9,9 +9,12 @@ Untuk menjalankan satu server dan tiga clients, pertama-tama kita harus menjalan
 ![modif_on_client](documentation/modif_on_client.png)
 Memastikan client terhubung ke URI port 8080 -> `ClientBuilder::from_uri(Uri::from_static("ws://127.0.0.1:8080"))...` 
 <br>
+
 2. Di sisi server 
 ![modif_on_server](documentation/modif_on_server.png)
+
 * Mengubah port yang di-_binding_ -> `let listener = TcpListener::bind("127.0.0.1:8080").await?;`
+
 * Mengganti pesan yang tercetak -> `println!("listening on port 8080");`
 #### Make sure it still runs properly [√]
 ![modify_to_8080](documentation/changeport8080.png)
