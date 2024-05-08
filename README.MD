@@ -24,6 +24,7 @@ Program masih dapat berjalan dengan baik setelah portnya diganti. Kedua file, `s
 #### Send information about the IP and Port of the sender
 1. Perubahan di sisi server
 <br>
+
 * Menambahkan alamat(IP dan Port) pengirim pesan ke setiap pesan yang disebarkan (diteruskan) oleh server
 <br>
 
@@ -41,6 +42,8 @@ Menambahkan nama komputer ke dalam pesan yang diterima dari server
 
 ![asal_komputer_client](documentation/modif_asal_komputer_client.png)
 <br>
+<br>
+
 Hasilnya tampak seperti di bawah 
 <br>
 ![send_info](documentation/after_add_port_to_message.png)
